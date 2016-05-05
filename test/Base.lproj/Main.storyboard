@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Iv-vX-wlD">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Milky Way" translatesAutoresizingMaskIntoConstraints="NO" id="3Nj-RB-iOC">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="601"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="strcopy(0, &quot;this is a bad bug&quot;)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sqc-Kx-C8G">
+                                <rect key="frame" x="162" y="164" width="276" height="140"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="RSB-qn-wmj"/>
+                                    <constraint firstAttribute="width" constant="240" id="fuk-Uf-fRh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fuk-Uf-fRh"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQw-ZR-VZj">
+                                <rect key="frame" x="193" y="318" width="215" height="30"/>
+                                <color key="backgroundColor" red="0.36056264896081514" green="0.29018303637590903" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="AGA-I3-m2V"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.2090708558513158" blue="0.78380235629753814" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="don't press this button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xlb-hx-dEp" kind="show" id="nzg-JY-Pis"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="486-js-NoY">
+                                <rect key="frame" x="200" y="356" width="201" height="30"/>
+                                <color key="backgroundColor" red="0.46453343924896517" green="0.1240717217067544" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.54075762140509531" blue="0.74804011084915611" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Alert Controller with text field">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3QP-JV-8f6"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzN-Cy-EzP">
+                                <rect key="frame" x="0.0" y="385" width="600" height="216"/>
+                                <color key="tintColor" red="0.087616239486719372" green="0.78551582821604826" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="lzN-Cy-EzP" secondAttribute="trailing" constant="-20" id="2yb-Uy-KgE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="486-js-NoY" secondAttribute="bottom" constant="214" id="A9x-89-whp"/>
+                            <constraint firstItem="Sqc-Kx-C8G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="HvH-sY-gmP"/>
+                            <constraint firstItem="3Nj-RB-iOC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="N3c-Sa-Yeh"/>
+                            <constraint firstItem="486-js-NoY" firstAttribute="centerX" secondItem="3Nj-RB-iOC" secondAttribute="centerX" id="RiU-Ik-D15"/>
+                            <constraint firstItem="3Nj-RB-iOC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Rya-NO-hym"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lzN-Cy-EzP" secondAttribute="bottom" constant="-1" id="VyZ-0t-wdn"/>
+                            <constraint firstItem="jQw-ZR-VZj" firstAttribute="top" secondItem="Sqc-Kx-C8G" secondAttribute="bottom" constant="14" id="XsW-xm-XOm"/>
+                            <constraint firstItem="jQw-ZR-VZj" firstAttribute="leading" secondItem="486-js-NoY" secondAttribute="leading" id="YVh-8y-QqH"/>
+                            <constraint firstItem="jQw-ZR-VZj" firstAttribute="centerX" secondItem="3Nj-RB-iOC" secondAttribute="centerX" id="ax1-GG-9IR"/>
+                            <constraint firstItem="jQw-ZR-VZj" firstAttribute="trailing" secondItem="486-js-NoY" secondAttribute="trailing" id="bJy-li-irh"/>
+                            <constraint firstItem="3Nj-RB-iOC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eci-2e-Mae"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sqc-Kx-C8G" secondAttribute="bottom" constant="308" id="gMi-7H-hTR"/>
+                            <constraint firstItem="jQw-ZR-VZj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gkb-OK-DMO"/>
+                            <constraint firstItem="lzN-Cy-EzP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="lFP-Dm-mK9"/>
+                            <constraint firstItem="Sqc-Kx-C8G" firstAttribute="centerX" secondItem="3Nj-RB-iOC" secondAttribute="centerX" id="ltY-IE-YBe"/>
+                            <constraint firstItem="Sqc-Kx-C8G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="181" id="p8o-aW-uq2"/>
+                            <constraint firstItem="lzN-Cy-EzP" firstAttribute="top" secondItem="486-js-NoY" secondAttribute="bottom" constant="-1" id="zPW-0N-lGi"/>
+                            <constraint firstItem="486-js-NoY" firstAttribute="top" secondItem="jQw-ZR-VZj" secondAttribute="bottom" constant="8" symbolic="YES" id="zf3-I6-bVG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="p8o-aW-uq2"/>
+                                <exclude reference="YVh-8y-QqH"/>
+                                <exclude reference="bJy-li-irh"/>
+                                <exclude reference="gMi-7H-hTR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="90u-K7-wp5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1643" y="444"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="e45-CE-Z29">
+            <objects>
+                <viewController id="xlb-hx-dEp" customClass="ViewController2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UEh-LK-jdJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="hrN-HM-omD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eOF-vm-M5g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2uf-xv-slq">
+                                <rect key="frame" x="0.0" y="64" width="5120" height="2880"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3iY-WS-yi1">
+                                        <rect key="frame" x="0.0" y="0.0" width="5120" height="2880"/>
+                                        <color key="backgroundColor" red="0.52444786054502379" green="0.75810746880566349" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.087616239486719372" green="0.78551582821604826" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMB-ss-xVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2715" y="274"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Q5-HS-zsF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Iv-vX-wlD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a2i-6G-v3i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hNa-wd-NAR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEf-MD-lVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="444"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Milky Way" width="5120" height="2880"/>
+    </resources>
+</document>
