@@ -2,28 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BUDDYBUILD_APP_ID</key>
-	<string>33223434</string>
-	<key>BUDDYBUILD_BUILD_ID</key>
-	<string>3342324243</string>
-	<key>BUDDYBUILD_BUILD_NUMBER</key>
-	<string>75</string>
-	<key>BUDDYBUILD_ENDPOINT</key>
-	<string>https://dashboard.buddybuild.com</string>
-	<key>BUDDYBUILD_ENVIRONMENT</key>
-	<string>local</string>
-	<key>BUDDYBUILD_FORCE_TUTORIAL</key>
-	<true/>
-	<key>BUDDYBUILD_SCHEME</key>
-	<string>test scheme</string>
-	<key>BUDDYBUILD_SETTING_ENABLE_CRASH_REPORTING</key>
-	<true/>
-	<key>BUDDYBUILD_SETTING_ENABLE_LOCAL_LOGGING</key>
-	<true/>
-	<key>BUDDYBUILD_SETTING_ENABLE_SCREENSHOT_INTERCEPTION</key>
-	<true/>
-	<key>BUDDYBUILD_SETTING_ENABLE_SCREENSHOT_TUTORIAL</key>
-	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
