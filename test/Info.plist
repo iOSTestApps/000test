@@ -2,26 +2,89 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BUDDYBUILD_APP_ID</key>
+	<string>572bc3f73ea8300100019e5d</string>
+	<key>BUDDYBUILD_BUILD_ID</key>
+	<string>572d08e4f4d115010086d305</string>
+	<key>BUDDYBUILD_BUILD_NUMBER</key>
+	<string>14</string>
+	<key>BUDDYBUILD_ENDPOINT</key>
+	<string>https%3A%2F%2Fdashboard.buddybuild.com</string>
+	<key>BUDDYBUILD_ENVIRONMENT</key>
+	<string>alpha</string>
+	<key>BUDDYBUILD_SCHEME</key>
+	<string>test - Release</string>
+	<key>BUDDYBUILD_SETTING_ENABLE_CRASH_REPORTING</key>
+	<true/>
+	<key>BUDDYBUILD_SETTING_ENABLE_INSTANT_REPLAY</key>
+	<false/>
+	<key>BUDDYBUILD_SETTING_ENABLE_LOCAL_LOGGING</key>
+	<false/>
+	<key>BUDDYBUILD_SETTING_ENABLE_NSLOG_CAPTURE</key>
+	<true/>
+	<key>BUDDYBUILD_SETTING_ENABLE_SCREENSHOT_INTERCEPTION</key>
+	<true/>
+	<key>BUDDYBUILD_SETTING_ENABLE_SCREENSHOT_TUTORIAL</key>
+	<true/>
+	<key>BUDDYBUILD_SETTING_ENABLE_SESSION_TRACKING</key>
+	<true/>
+	<key>BUDDYBUILD_SETTING_ENABLE_VERSION_CHECKING</key>
+	<true/>
+	<key>BuildMachineOSBuild</key>
+	<string>15E65</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
+	<string>test</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>test</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>iPhoneOS</string>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>13E230</string>
+	<key>DTPlatformName</key>
+	<string>iphoneos</string>
+	<key>DTPlatformVersion</key>
+	<string>9.3</string>
+	<key>DTSDKBuild</key>
+	<string>13E230</string>
+	<key>DTSDKName</key>
+	<string>iphoneos9.3</string>
+	<key>DTXcode</key>
+	<string>0730</string>
+	<key>DTXcodeBuild</key>
+	<string>7D175</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MinimumOSVersion</key>
+	<string>9.0</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>location</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+		<integer>2</integer>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

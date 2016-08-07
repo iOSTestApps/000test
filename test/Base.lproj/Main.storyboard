@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Iv-vX-wlD">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,21 +19,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Milky Way" translatesAutoresizingMaskIntoConstraints="NO" id="3Nj-RB-iOC">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="601"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="strcopy(0, &quot;this is a bad bug&quot;)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sqc-Kx-C8G">
-                                <rect key="frame" x="162" y="164" width="276" height="140"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="276" id="RSB-qn-wmj"/>
-                                    <constraint firstAttribute="width" constant="240" id="fuk-Uf-fRh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="fuk-Uf-fRh"/>
-                                    </mask>
-                                </variation>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQw-ZR-VZj">
                                 <rect key="frame" x="193" y="318" width="215" height="30"/>
                                 <color key="backgroundColor" red="0.36056264896081514" green="0.29018303637590903" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,43 +44,46 @@
                                     <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3QP-JV-8f6"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzN-Cy-EzP">
-                                <rect key="frame" x="0.0" y="385" width="600" height="216"/>
-                                <color key="tintColor" red="0.087616239486719372" green="0.78551582821604826" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lD8-lg-M3j">
+                                <rect key="frame" x="8" y="280" width="572" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="ufc-on-AHW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="lzN-Cy-EzP" secondAttribute="trailing" constant="-20" id="2yb-Uy-KgE"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="486-js-NoY" secondAttribute="bottom" constant="214" id="A9x-89-whp"/>
-                            <constraint firstItem="Sqc-Kx-C8G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="HvH-sY-gmP"/>
                             <constraint firstItem="3Nj-RB-iOC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="N3c-Sa-Yeh"/>
+                            <constraint firstItem="3Nj-RB-iOC" firstAttribute="leading" secondItem="lD8-lg-M3j" secondAttribute="trailing" constant="-453" id="PgD-q0-86O"/>
                             <constraint firstItem="486-js-NoY" firstAttribute="centerX" secondItem="3Nj-RB-iOC" secondAttribute="centerX" id="RiU-Ik-D15"/>
                             <constraint firstItem="3Nj-RB-iOC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Rya-NO-hym"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lzN-Cy-EzP" secondAttribute="bottom" constant="-1" id="VyZ-0t-wdn"/>
-                            <constraint firstItem="jQw-ZR-VZj" firstAttribute="top" secondItem="Sqc-Kx-C8G" secondAttribute="bottom" constant="14" id="XsW-xm-XOm"/>
+                            <constraint firstItem="jQw-ZR-VZj" firstAttribute="top" secondItem="lD8-lg-M3j" secondAttribute="bottom" constant="8" symbolic="YES" id="X4I-xP-Yzj"/>
                             <constraint firstItem="jQw-ZR-VZj" firstAttribute="leading" secondItem="486-js-NoY" secondAttribute="leading" id="YVh-8y-QqH"/>
                             <constraint firstItem="jQw-ZR-VZj" firstAttribute="centerX" secondItem="3Nj-RB-iOC" secondAttribute="centerX" id="ax1-GG-9IR"/>
                             <constraint firstItem="jQw-ZR-VZj" firstAttribute="trailing" secondItem="486-js-NoY" secondAttribute="trailing" id="bJy-li-irh"/>
                             <constraint firstItem="3Nj-RB-iOC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eci-2e-Mae"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sqc-Kx-C8G" secondAttribute="bottom" constant="308" id="gMi-7H-hTR"/>
+                            <constraint firstItem="lD8-lg-M3j" firstAttribute="centerX" secondItem="3Nj-RB-iOC" secondAttribute="centerX" id="f7D-4W-c66"/>
                             <constraint firstItem="jQw-ZR-VZj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gkb-OK-DMO"/>
-                            <constraint firstItem="lzN-Cy-EzP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="lFP-Dm-mK9"/>
-                            <constraint firstItem="Sqc-Kx-C8G" firstAttribute="centerX" secondItem="3Nj-RB-iOC" secondAttribute="centerX" id="ltY-IE-YBe"/>
-                            <constraint firstItem="Sqc-Kx-C8G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="181" id="p8o-aW-uq2"/>
-                            <constraint firstItem="lzN-Cy-EzP" firstAttribute="top" secondItem="486-js-NoY" secondAttribute="bottom" constant="-1" id="zPW-0N-lGi"/>
                             <constraint firstItem="486-js-NoY" firstAttribute="top" secondItem="jQw-ZR-VZj" secondAttribute="bottom" constant="8" symbolic="YES" id="zf3-I6-bVG"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lD8-lg-M3j"/>
+                            </mask>
                             <mask key="constraints">
-                                <exclude reference="p8o-aW-uq2"/>
+                                <exclude reference="f7D-4W-c66"/>
                                 <exclude reference="YVh-8y-QqH"/>
                                 <exclude reference="bJy-li-irh"/>
-                                <exclude reference="gMi-7H-hTR"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="90u-K7-wp5"/>
+                    <connections>
+                        <outlet property="textFiel1" destination="lD8-lg-M3j" id="sgl-FF-12B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

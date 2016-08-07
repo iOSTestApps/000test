@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <BuddyBuildSDK/BuddyBuildSDK.h>
+#import "UIView+Swizzle.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-
+    
+    [BuddyBuildSDK setUserDisplayNameCallback:^(NSString* username){
+        
+        return @"meow";
+        
+    }];
+    
+    //loadViewCategory();
     [BuddyBuildSDK setup];
    
 

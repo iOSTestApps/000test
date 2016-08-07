@@ -20,6 +20,20 @@ typedef void (^BBCallback)();
 + (void)setup;
 
 /*
+ * Associate arbitrary key/value pairs with your crash reports
+ * which will be visible from the buddybuild dashboard
+ */
++ (void) setCrashMetadataObject:(id)object forKey:(NSString*)key;
+
+/*
+ * Programatically trigger the screenshot feedback UI without pressing the screenshot buttons
+ * If you have screenshot feedback disabled through the buddybuild setting,
+ * you can still trigger it by calling this method
+ */
+
++ (void)takeScreenshotAndShowFeedbackScreen;
+
+/*
  * If you distribute a build to someone with their email address, buddybuild can 
  * figure out who they are and attach their info to feedback and crash reports.
  *
@@ -30,6 +44,7 @@ typedef void (^BBCallback)();
  * Often you'll know the identity of your user, for example, after they've 
  * logged in. You can provide buddybuild a callback to identify the current user.
  */
+
 + (void)setUserDisplayNameCallback:(BBReturnNSStringCallback)bbCallback;
 
 /*
@@ -67,4 +82,42 @@ typedef void (^BBCallback)();
  * so you can take additional actions if necessary
  */
 + (void)setCrashReportSentCallback:(BBCallback)bbCallback;
+
+/* 
+ * Buddybuild Build Number
+ */
++ (NSString*)buildNumber;
+
+/*
+ * Scheme
+ */
++ (NSString*)scheme;
+
+/*
+ * App ID
+ */
++ (NSString*)appID;
+
+/*
+ * Build ID
+ */
++ (NSString*)buildID;
+
+/*
+ * Build Configuration
+ */
+
++ (NSString*)buildConfiguration;
+
+
+@end
+
+@interface UIView (BuddyBuildSDK)
+
+// Certain features of buddybuild involve capturing the screen (either through a static screenshot, or as a video for instant replays in crash reporting or video feedback.
+// Your app may contain certain sensitive customer information that you do not want to be included in the video.
+// If you set this property to be true, this view will be redacted from the screen capture and blacked out
+
+@property (nonatomic, assign) BOOL buddybuildViewContainsSensitiveInformation;
+
 @end

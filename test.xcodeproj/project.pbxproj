@@ -11,6 +11,11 @@
 		9F2D01661CD1D0BA000F1081 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2D01651CD1D0BA000F1081 /* CoreMedia.framework */; };
 		9F2D01681CD1D0D2000F1081 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2D01671CD1D0D2000F1081 /* AssetsLibrary.framework */; };
 		9F2D01731CD58B53000F1081 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2D01721CD58B53000F1081 /* ViewController2.m */; };
+		9F7FF7471D36E45C00F8F2B8 /* UIView+BBViewRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7FF7461D36E45C00F8F2B8 /* UIView+BBViewRecorder.m */; };
+		9F7FF7491D38044200F8F2B8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7FF7481D38044200F8F2B8 /* CoreTelephony.framework */; };
+		9F7FF74B1D38045900F8F2B8 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7FF74A1D38045900F8F2B8 /* CoreVideo.framework */; };
+		9F7FF74D1D38047700F8F2B8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7FF74C1D38047700F8F2B8 /* SystemConfiguration.framework */; };
+		9F87DD231D34510000123C41 /* UIView+Protected.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F87DD221D34510000123C41 /* UIView+Protected.m */; };
 		9F93DA131CA9A3DE004C2DDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93DA121CA9A3DE004C2DDA /* main.m */; };
 		9F93DA161CA9A3DE004C2DDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93DA151CA9A3DE004C2DDA /* AppDelegate.m */; };
 		9F93DA191CA9A3DE004C2DDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93DA181CA9A3DE004C2DDA /* ViewController.m */; };
@@ -18,6 +23,9 @@
 		9F93DA1E1CA9A3DE004C2DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F93DA1D1CA9A3DE004C2DDA /* Assets.xcassets */; };
 		9F93DA211CA9A3DE004C2DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F93DA1F1CA9A3DE004C2DDA /* LaunchScreen.storyboard */; };
 		9F93DA291CA9A4AE004C2DDA /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F93DA281CA9A4AE004C2DDA /* BuddyBuildSDK.framework */; };
+		9FC04D091D3D59AC00A639B2 /* UIView+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC04D081D3D59AC00A639B2 /* UIView+Swizzle.m */; };
+		9FC04D0C1D3D778600A639B2 /* ProtectedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC04D0B1D3D778600A639B2 /* ProtectedView.m */; };
+		9FF424E41D2B928500527756 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FF424E31D2B928500527756 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,13 @@
 		9F2D01671CD1D0D2000F1081 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		9F2D01711CD58B53000F1081 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		9F2D01721CD58B53000F1081 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		9F7FF7451D36E45C00F8F2B8 /* UIView+BBViewRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BBViewRecorder.h"; sourceTree = "<group>"; };
+		9F7FF7461D36E45C00F8F2B8 /* UIView+BBViewRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BBViewRecorder.m"; sourceTree = "<group>"; };
+		9F7FF7481D38044200F8F2B8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9F7FF74A1D38045900F8F2B8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9F7FF74C1D38047700F8F2B8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9F87DD211D34510000123C41 /* UIView+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Protected.h"; sourceTree = "<group>"; };
+		9F87DD221D34510000123C41 /* UIView+Protected.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Protected.m"; sourceTree = "<group>"; };
 		9F93DA0E1CA9A3DE004C2DDA /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F93DA121CA9A3DE004C2DDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F93DA141CA9A3DE004C2DDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,8 +50,12 @@
 		9F93DA1B1CA9A3DE004C2DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F93DA1D1CA9A3DE004C2DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F93DA201CA9A3DE004C2DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9F93DA221CA9A3DE004C2DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F93DA281CA9A4AE004C2DDA /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = SOURCE_ROOT; };
+		9FC04D071D3D59AC00A639B2 /* UIView+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Swizzle.h"; sourceTree = "<group>"; };
+		9FC04D081D3D59AC00A639B2 /* UIView+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Swizzle.m"; sourceTree = "<group>"; };
+		9FC04D0A1D3D778600A639B2 /* ProtectedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtectedView.h; sourceTree = "<group>"; };
+		9FC04D0B1D3D778600A639B2 /* ProtectedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectedView.m; sourceTree = "<group>"; };
+		9FF424E31D2B928500527756 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7FF74D1D38047700F8F2B8 /* SystemConfiguration.framework in Frameworks */,
+				9F7FF74B1D38045900F8F2B8 /* CoreVideo.framework in Frameworks */,
+				9F7FF7491D38044200F8F2B8 /* CoreTelephony.framework in Frameworks */,
 				9F2D01681CD1D0D2000F1081 /* AssetsLibrary.framework in Frameworks */,
 				9F2D01661CD1D0BA000F1081 /* CoreMedia.framework in Frameworks */,
 				9F2D01641CD1D08C000F1081 /* AVFoundation.framework in Frameworks */,
@@ -57,6 +79,9 @@
 		9F93DA051CA9A3DE004C2DDA = {
 			isa = PBXGroup;
 			children = (
+				9F7FF74C1D38047700F8F2B8 /* SystemConfiguration.framework */,
+				9F7FF74A1D38045900F8F2B8 /* CoreVideo.framework */,
+				9F7FF7481D38044200F8F2B8 /* CoreTelephony.framework */,
 				9F2D01671CD1D0D2000F1081 /* AssetsLibrary.framework */,
 				9F2D01651CD1D0BA000F1081 /* CoreMedia.framework */,
 				9F2D01631CD1D08C000F1081 /* AVFoundation.framework */,
@@ -81,12 +106,20 @@
 				9F93DA151CA9A3DE004C2DDA /* AppDelegate.m */,
 				9F93DA171CA9A3DE004C2DDA /* ViewController.h */,
 				9F93DA181CA9A3DE004C2DDA /* ViewController.m */,
+				9F87DD211D34510000123C41 /* UIView+Protected.h */,
+				9F87DD221D34510000123C41 /* UIView+Protected.m */,
+				9F7FF7451D36E45C00F8F2B8 /* UIView+BBViewRecorder.h */,
+				9F7FF7461D36E45C00F8F2B8 /* UIView+BBViewRecorder.m */,
+				9FC04D071D3D59AC00A639B2 /* UIView+Swizzle.h */,
+				9FC04D081D3D59AC00A639B2 /* UIView+Swizzle.m */,
+				9FC04D0A1D3D778600A639B2 /* ProtectedView.h */,
+				9FC04D0B1D3D778600A639B2 /* ProtectedView.m */,
 				9F2D01711CD58B53000F1081 /* ViewController2.h */,
 				9F2D01721CD58B53000F1081 /* ViewController2.m */,
 				9F93DA1A1CA9A3DE004C2DDA /* Main.storyboard */,
 				9F93DA1D1CA9A3DE004C2DDA /* Assets.xcassets */,
 				9F93DA1F1CA9A3DE004C2DDA /* LaunchScreen.storyboard */,
-				9F93DA221CA9A3DE004C2DDA /* Info.plist */,
+				9FF424E31D2B928500527756 /* Info.plist */,
 				9F93DA111CA9A3DE004C2DDA /* Supporting Files */,
 			);
 			path = test;
@@ -107,7 +140,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F93DA251CA9A3DE004C2DDA /* Build configuration list for PBXNativeTarget "test" */;
 			buildPhases = (
-				9F93DA2A1CA9A670004C2DDA /* Run Script */,
 				9F93DA0A1CA9A3DE004C2DDA /* Sources */,
 				9F93DA0B1CA9A3DE004C2DDA /* Frameworks */,
 				9F93DA0C1CA9A3DE004C2DDA /* Resources */,
@@ -136,6 +168,11 @@
 					9F93DA0D1CA9A3DE004C2DDA = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 2F6S9QR5HR;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -165,27 +202,11 @@
 				9F93DA211CA9A3DE004C2DDA /* LaunchScreen.storyboard in Resources */,
 				9F93DA1E1CA9A3DE004C2DDA /* Assets.xcassets in Resources */,
 				9F93DA1C1CA9A3DE004C2DDA /* Main.storyboard in Resources */,
+				9FF424E41D2B928500527756 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9F93DA2A1CA9A670004C2DDA /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# cd $(pwd)/../BuddyBuildSDK\n# ./quick-build.sh ../test\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F93DA0A1CA9A3DE004C2DDA /* Sources */ = {
@@ -194,8 +215,12 @@
 			files = (
 				9F93DA191CA9A3DE004C2DDA /* ViewController.m in Sources */,
 				9F2D01731CD58B53000F1081 /* ViewController2.m in Sources */,
+				9F87DD231D34510000123C41 /* UIView+Protected.m in Sources */,
 				9F93DA161CA9A3DE004C2DDA /* AppDelegate.m in Sources */,
+				9FC04D091D3D59AC00A639B2 /* UIView+Swizzle.m in Sources */,
+				9FC04D0C1D3D778600A639B2 /* ProtectedView.m in Sources */,
 				9F93DA131CA9A3DE004C2DDA /* main.m in Sources */,
+				9F7FF7471D36E45C00F8F2B8 /* UIView+BBViewRecorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +287,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
@@ -302,6 +328,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -324,6 +351,7 @@
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BALDYS.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -346,6 +374,7 @@
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BALDYS.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
